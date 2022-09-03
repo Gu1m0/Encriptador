@@ -2,6 +2,8 @@
 
 #  <a href="https://gu1m0.github.io/Encriptador/"><img src="https://user-images.githubusercontent.com/112251495/187895976-26ef84b8-80a8-4610-b470-01f36f219f93.png"></a> ⬆(Presiona la imagen para ver el proyecto realizado)⬆
 <br><br><br>
+# Insignia del proyecto realizado 🏅&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/112251495/188261530-74266cee-5221-4d57-b875-2826e6d5cd48.gif" width="50px"><img alt="Insignia-Challenge#1-Encriptador" src="https://user-images.githubusercontent.com/112251495/188261696-47ec3cf3-9829-4d44-a666-5d89517dfebb.png" width="700px">
+
 
 # Sobre el desafío
 
