@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <div class="contenedor-total">
+      <div class="contenedor">
+        <div class="contenedor__contenidosIzquierda" id="izquierda">
+          <div class="imagen-link">
+            <a href="index.html"><img src="Logo.png" alt="logo-alura" /></a>
+          </div>
+          <textarea
+            name=""
+            id="textoingresado"
+            placeholder="Ingrese su texto aquí"
+          ></textarea>
+          <div class="botonesYp">
+            <p>
+              <img
+                src="Vector.png"
+                alt="icono-exclamacion"
+                style="filter: opacity(0.8) drop-shadow(0 0 0 rgb(0, 0, 0))"
+              />Sólo letras minúsculas y sin acento
+            </p>
+            <div class="botones">
+              <a href="#derecha">
+                <button class="boton1" onclick="encriptar()">
+                  Encriptar
+                  <i class="fa-solid fa-lock" style="margin-left: 2px"></i>
+                </button>
+              </a>
+              <a href="#derecha">
+                <button class="boton2" onclick="desencriptar()">
+                  Desencriptar
+                  <i class="fa-solid fa-lock-open" style="margin-left: 2px"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor__contenidosDerecha animacion" id="derecha">
+          <div class="vidHidden" id="video">
+            <video id="vid" muted poster="">
+              <source src="vid2.mov" type="video/mp4" />
+            </video>
+          </div>
+          <div class="contenidosDerecha1" id="contenidosDerecha1">
+            <div class="imagen-muñeco">
+              <img src="Muñeco.png" alt="buscando-con-lupa" />
+              <p>Ningún mensaje fue encontrado</p>
+              <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+          </div>
+          <div class="contenidosDerecha2" id="contenidosDerecha2">
+            <div class="texto-botonCpy">
+              <textarea
+                class="animacionTxt"
+                type="text"
+                id="textoAPoner"
+                readonly
+              ></textarea>
+
+              <div class="botonCpy" id="derecha2">
+                <a href="#izquierda"
+                  ><button onclick="copiar()">
+                    Copiar
+                    <i
+                      class="fa-regular fa-copy"
+                      style="margin-left: 2px"
+                    ></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
